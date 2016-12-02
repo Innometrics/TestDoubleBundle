@@ -1,6 +1,6 @@
 <?php
 
-namespace DocteurKlein\TestDoubleBundle;
+namespace Innometrics\TestDoubleBundle;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
