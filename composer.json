@@ -1,5 +1,5 @@
 {
-    "name": "docteurklein/test-double-bundle",
+    "name": "innometrics/test-double-bundle",
     "description": "Easily create test doubles using symfony DIC",
     "type": "symfony-bundle",
     "license": "MIT",
