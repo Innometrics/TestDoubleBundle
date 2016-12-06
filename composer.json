@@ -9,7 +9,11 @@
             "email": "florian.klein@free.fr"
         }
     ],
-    "require": {},
+    "require": {
+        "symfony/http-kernel": "2.1.*",
+        "symfony/dependency-injection": "2.1.*",
+        "phpspec/prophecy": "^1.6"    
+    },
     "autoload": {
         "psr-4": {
             "Innometrics\\TestDoubleBundle\\": ""
