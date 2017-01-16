@@ -12,8 +12,12 @@
     "require": {
         "symfony/http-kernel": "2.1.*",
         "symfony/dependency-injection": "2.1.*",
-        "phpspec/prophecy": "^1.6"    
+        "innometrics/prophecy": "dev-master"    
     },
+    "repositories": [{
+        "type": "git",
+        "url": "git@github.com:Innometrics/prophecy.git"
+    }],    
     "autoload": {
         "psr-4": {
             "Innometrics\\TestDoubleBundle\\": ""
