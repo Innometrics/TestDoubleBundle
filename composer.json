@@ -14,6 +14,8 @@
         "symfony/dependency-injection": "2.1.*",
         "innometrics/prophecy": "dev-master-fixed"    
     },
+    "prefer-stable": true,
+    "minimum-stability": "dev",    
     "repositories": [{
         "type": "git",
         "url": "git@github.com:Innometrics/prophecy.git"
