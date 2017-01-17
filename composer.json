@@ -14,10 +14,6 @@
         "symfony/dependency-injection": "2.1.*",
         "innometrics/prophecy": "dev-master-fixed"    
     },   
-    "repositories": [{
-        "type": "git",
-        "url": "git@github.com:Innometrics/prophecy.git"
-    }],    
     "autoload": {
         "psr-4": {
             "Innometrics\\TestDoubleBundle\\": ""
