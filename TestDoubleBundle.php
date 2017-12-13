@@ -31,7 +31,8 @@ final class TestDoubleBundle extends Bundle implements CompilerPassInterface
                     $container->setDefinition("$id.prophecy", (new Definition)->setSynthetic(true));
                     $container->setDefinition("$id.stub", (new Definition)->setSynthetic(true));
 
-                    $container->setAlias($id, "$id.stub");
+                    // disable stubing
+                    // $container->setAlias($id, "$id.stub");
 
                     $class = $definition->getClass();
                     if (isset($config['stub'])) {
@@ -51,7 +52,8 @@ final class TestDoubleBundle extends Bundle implements CompilerPassInterface
         foreach ($this->container->getParameter('stub.services') as $id => $class) {
             $prophecy = $prophet->prophesize($class);
             $this->container->set("$id.prophecy", $prophecy);
-            $this->container->set("$id.stub", $prophecy->reveal());
+            // disable stubing
+            // $this->container->set("$id.stub", $prophecy->reveal());
         }
         $this->container->set('stub.prophet', $prophet);
     }
