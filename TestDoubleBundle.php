@@ -52,8 +52,7 @@ final class TestDoubleBundle extends Bundle implements CompilerPassInterface
         foreach ($this->container->getParameter('stub.services') as $id => $class) {
             $prophecy = $prophet->prophesize($class);
             $this->container->set("$id.prophecy", $prophecy);
-            // disable stubing
-            // $this->container->set("$id.stub", $prophecy->reveal());
+            $this->container->set("$id.stub", $prophecy->reveal());
         }
         $this->container->set('stub.prophet', $prophet);
     }
